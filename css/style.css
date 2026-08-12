@@ -1,6 +1,6 @@
-/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com */
 
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/* main.css 3.0.0 | MIT License | https://github.com */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -10,7 +10,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,700;1,18..144,87..112,700&family=Poppins:wght@200;400;600&display=swap');
+@import url('https://googleapis.com');
 
 html {
   color: #222;
@@ -20,7 +20,7 @@ html {
 
 /*
  * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
+ * https://twitter.com
  *
  * Customize the background color to match your design.
  */
@@ -51,7 +51,7 @@ hr {
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
+ * https://github.com
  */
 
 audio,
@@ -100,11 +100,11 @@ textarea {
 
 /*
  * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ * https://snook.ca
  *
  * 1. For long content, line feeds are not interpreted as spaces and small width
  *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ *    https://medium.com
  */
 
 .visually-hidden {
@@ -123,7 +123,7 @@ textarea {
 /*
  * Extends the .visually-hidden class to allow the element
  * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
+ * https://drupal.org
  */
 
 .visually-hidden.focusable:active,
@@ -181,7 +181,7 @@ textarea {
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
+   https://phpied.com
    ========================================================================== */
 
 @media print {
@@ -296,16 +296,17 @@ figure.logo-container {
 
 .hero {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   gap: 40px;
   margin-top: 50px; 
+  position: relative;
 }
 
 .hero > div:first-child {
   flex: 1;
-  max-width: 55%;
+  max-width: 784px;
 }
 
 .hero h1 {
@@ -353,21 +354,13 @@ figure.logo-container {
   justify-content: center;
   width: 240px;
   height: 60px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.hero-buttons > a:hover {
-  background-color: #b81f56;
-  transform: translateY(-2px);
 }
 
 .hero-image-box {
-  flex: 1;
-  max-width: 45%; 
-}
-
-.hero-image-box figure {
-  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45%;
 }
 
 .hero-image-box img {
@@ -386,7 +379,6 @@ figure.logo-container {
   margin-top: 80px;
   padding-bottom: 40px;
 }
-
 
 .events > div {
   display: inline-flex;
@@ -435,8 +427,4 @@ figure.logo-container {
 
 .Learn-more-button:hover img {
   transform: translateX(5px);
-}
-
-.Learn-more-button:hover {
-  transform: translateY(-2px);
 }
