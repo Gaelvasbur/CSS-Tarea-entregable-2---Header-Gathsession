@@ -254,26 +254,33 @@ body {
   margin: 0;
   padding: 0;
   background-color: #2B2D38; 
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .container {
   max-width: 1400px;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 70px 0 70px; 
+  padding: 0 70px; 
   background-color: #2B2D38;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  box-sizing: border-box;
 }
 
 .main-header {
   display: flex;
   justify-content: space-between; 
   align-items: center;
-  padding: 20px 0px 0px 0px;
+  padding: 15px 0 0 0;
 }
 
 figure.logo-container {
   margin-left: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .nav-list {
@@ -300,7 +307,7 @@ figure.logo-container {
   justify-content: space-between;
   width: 100%;
   gap: 40px;
-  margin-top: 30px; 
+  align-self: center;
 }
 
 .hero > div:first-child {
@@ -314,8 +321,8 @@ figure.logo-container {
   font-weight: 700;
   font-style: normal;
   color: #FFFFFF;
-  margin: 0px 0px 15px 0px;
-  font-size: 52px;
+  margin: 0px 0px 10px 0px;
+  font-size: 44px;
   line-height: 1.2;
 }
 
@@ -323,11 +330,12 @@ figure.logo-container {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px; 
+  font-size: 15px; 
   color: #ABABAB;
   width: 100%;
-  max-width: 500px;
-  margin-bottom: 20px;
+  max-width: 480px;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .hero-buttons {
@@ -352,14 +360,9 @@ figure.logo-container {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 220px;
-  height: 55px;
+  width: 200px;
+  height: 50px;
   transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.hero-buttons > a:hover {
-  background-color: #b81f56;
-  transform: translateY(-2px);
 }
 
 .hero-image-box {
@@ -373,7 +376,7 @@ figure.logo-container {
 
 .hero-image-box img {
   max-width: 100%;
-  max-height: 45vh;
+  max-height: 38vh;
   width: auto;
   height: auto;
   display: block;
@@ -387,11 +390,10 @@ figure.logo-container {
   flex-wrap: nowrap;
   gap: 48px;
   width: 100%;
-  margin-top: 40px;
-  padding-bottom: 20px;
+  margin-top: 0;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
-
-
 
 .events > div {
   display: inline-flex;
@@ -410,11 +412,6 @@ figure.logo-container {
 .hero-buttons > a:hover {
   background-color: #b81f56;
   transform: translateY(-2px);
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.hero-buttons > a {
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .Learn-more-button {
@@ -440,8 +437,4 @@ figure.logo-container {
 
 .Learn-more-button:hover img {
   transform: translateX(5px);
-}
-
-.Learn-more-button:hover {
-  transform: translateY(-2px);
 }
