@@ -296,17 +296,16 @@ figure.logo-container {
 
 .hero {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   gap: 40px;
   margin-top: 50px; 
-  position: relative;
 }
 
 .hero > div:first-child {
   flex: 1;
-  max-width: 784px;
+  max-width: 55%;
 }
 
 .hero h1 {
@@ -354,13 +353,21 @@ figure.logo-container {
   justify-content: center;
   width: 240px;
   height: 60px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-buttons > a:hover {
+  background-color: #b81f56;
+  transform: translateY(-2px);
 }
 
 .hero-image-box {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 45%;
+  flex: 1;
+  max-width: 45%; 
+}
+
+.hero-image-box figure {
+  margin: 0;
 }
 
 .hero-image-box img {
@@ -379,6 +386,7 @@ figure.logo-container {
   margin-top: 80px;
   padding-bottom: 40px;
 }
+
 
 .events > div {
   display: inline-flex;
